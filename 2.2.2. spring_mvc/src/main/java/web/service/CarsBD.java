@@ -1,13 +1,16 @@
 package web.service;
 
+import org.springframework.stereotype.Component;
+
 import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CarsBD {
 
-    public static List<Car> getBD () {
+    public  List<Car> getBD () {
         List<Car> list = new ArrayList<>();
 
         Car car1 = new Car("BMW", "200", "Black");
